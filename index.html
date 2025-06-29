@@ -1,90 +1,122 @@
 <!DOCTYPE html>
 <html lang="it">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Swapzy - Compra, Vendi, Guadagna</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Swapzy – Il nuovo modo di vendere</title>
   <style>
     body {
       margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: #ffffff;
-      color: #0f0f0f;
+      font-family: 'Helvetica Neue', sans-serif;
+      background: linear-gradient(to bottom, #ffffff, #f0f0f0);
+      color: #333;
     }
     header {
-      background-color: #0f0f0f;
+      background-color: #000000;
       color: white;
-      padding: 30px 20px;
+      padding: 2rem;
       text-align: center;
     }
     header h1 {
-      font-size: 2.5rem;
+      font-size: 3rem;
       margin: 0;
     }
+    nav {
+      text-align: center;
+      margin-top: 1rem;
+    }
+    nav a {
+      text-decoration: none;
+      color: white;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
     .hero {
-      padding: 60px 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 4rem 1rem;
+      background: url('https://images.unsplash.com/photo-1542291026-7eec264c27ff') no-repeat center center/cover;
+      color: white;
       text-align: center;
     }
     .hero h2 {
-      font-size: 2rem;
-      margin-bottom: 20px;
+      font-size: 2.5rem;
+      margin-bottom: 1rem;
     }
     .hero p {
       font-size: 1.2rem;
-      color: #7c7c7c;
       max-width: 600px;
-      margin: auto;
     }
-    .btn {
+    .hero a.button {
       display: inline-block;
-      margin-top: 30px;
-      padding: 12px 24px;
-      background-color: #0099ff;
-      color: white;
+      margin-top: 2rem;
+      padding: 1rem 2rem;
+      background-color: #ffffff;
+      color: #000000;
       text-decoration: none;
-      border-radius: 6px;
       font-weight: bold;
-      transition: 0.3s;
+      border-radius: 5px;
+      transition: background 0.3s;
     }
-    .btn:hover {
-      background-color: #007acc;
+    .hero a.button:hover {
+      background-color: #dddddd;
     }
     .section {
-      padding: 40px 20px;
-      text-align: center;
+      padding: 4rem 1rem;
+      max-width: 900px;
+      margin: 0 auto;
     }
     .section h3 {
-      font-size: 1.8rem;
-      margin-bottom: 10px;
+      font-size: 2rem;
+      margin-bottom: 1rem;
     }
     .section p {
-      max-width: 600px;
-      margin: auto;
-      color: #555;
+      font-size: 1.1rem;
+      line-height: 1.6;
     }
     footer {
-      background-color: #0f0f0f;
-      color: white;
       text-align: center;
-      padding: 20px;
+      padding: 2rem;
+      background-color: #000;
+      color: white;
     }
   </style>
 </head>
 <body>
   <header>
     <h1>Swapzy</h1>
-    <p>Il futuro del second-hand tech & streetwear</p>
+    <nav>
+      <a href="#scopri">Scopri</a>
+      <a href="#come-funziona">Come funziona</a>
+      <a href="#contatti">Contattaci</a>
+    </nav>
   </header>
 
   <section class="hero">
-    <h2>Compra. Vendi. Guadagna.</h2>
-    <p>Swapzy è la nuova piattaforma per vendere e acquistare oggetti unici, tech, moda e accessori in modo semplice, veloce e sicuro.</p>
-    <a href="#" class="btn">Scopri di più</a>
+    <h2>Rivoluziona il modo di vendere e comprare</h2>
+    <p>Swapzy è la piattaforma pensata per i giovani: semplice, veloce e affidabile. Scambia, acquista e guadagna in modo intelligente.</p>
+    <a href="#scopri" class="button">Scopri di più</a>
   </section>
 
-  <section class="section">
-    <h3>Design moderno. Funzioni potenti.</h3>
-    <p>Swapzy è pensato per i giovani che vogliono fare business. Dimentica l'usato noioso, entra in un nuovo mondo di eleganza digitale.</p>
+  <section id="scopri" class="section">
+    <h3>Cos'è Swapzy?</h3>
+    <p>Swapzy è un'app innovativa che ti permette di vendere e comprare oggetti, vestiti, accessori e molto altro in modo facile e intuitivo. Design elegante, zero complicazioni.</p>
+  </section>
+
+  <section id="come-funziona" class="section">
+    <h3>Come funziona?</h3>
+    <p>1. Crea il tuo profilo gratuito<br>
+       2. Carica ciò che vuoi vendere<br>
+       3. Scopri i prodotti disponibili<br>
+       4. Concludi affari direttamente con altri utenti</p>
+  </section>
+
+  <section id="contatti" class="section">
+    <h3>Contattaci</h3>
+    <p>Email: creativevortex2@gmail.com<br>
+       Instagram: @swapzy.it</p>
   </section>
 
   <footer>
