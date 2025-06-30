@@ -136,3 +136,37 @@
     </button>
   </form>
 </section>
+<!-- SWAPZY | Email collector con animazione -->
+<section style="background: linear-gradient(to right, #000000, #1a1a1a); color: white; padding: 60px 20px; text-align: center; font-family: 'Montserrat', sans-serif;">
+  <h2 style="font-size: 36px; margin-bottom: 10px;">🚀 Resta aggiornato su Swapzy</h2>
+  <p style="font-size: 18px; color: #ccc;">Iscriviti con la tua email per ricevere accesso anticipato all'app</p>
+
+  <form id="emailForm" style="margin-top: 30px;">
+    <input type="email" id="emailInput" placeholder="La tua email..." required 
+           style="padding: 12px 20px; font-size: 16px; border: none; border-radius: 30px; width: 300px; max-width: 90%;">
+    <button type="submit" 
+            style="padding: 12px 30px; font-size: 16px; border: none; border-radius: 30px; background-color: #ffffff; color: #000000; margin-left: 10px; cursor: pointer; transition: all 0.3s ease;">Invia</button>
+  </form>
+
+  <div id="successMessage" style="margin-top: 20px; font-size: 18px; display: none; animation: fadeIn 1s ease-in-out;">✅ Grazie! Ti terremo aggiornato.</div>
+
+  <style>
+    @keyframes fadeIn {
+      from {opacity: 0;}
+      to {opacity: 1;}
+    }
+
+    form:hover button {
+      background-color: #00ffcc;
+      color: black;
+    }
+  </style>
+
+  <script>
+    document.getElementById('emailForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      document.getElementById('successMessage').style.display = 'block';
+      document.getElementById('emailInput').value = '';
+    });
+  </script>
+</section>
