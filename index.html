@@ -136,62 +136,102 @@
     </button>
   </form>
 </section>
-<!-- 🚀 Call to Action Finalissima -->
-<section class="cta-swapzy">
-  <div class="cta-content">
-    <h2 class="pop-text">Pronto a rivoluzionare il tuo modo di vendere e comprare?</h2>
-    <p class="pop-sub">Con Swapzy, ogni scambio conta. Unisciti ora e fai parte del cambiamento.</p>
-    <a href="#newsletter" class="cta-btn">Inizia ora</a>
+<!-- 💌 Sezione Newsletter -->
+<section class="newsletter-section" id="newsletter">
+  <div class="newsletter-content">
+    <h2>Resta aggiornato con Swapzy</h2>
+    <p>Ricevi aggiornamenti esclusivi e novità future sull’app direttamente nella tua mail.</p>
+    <form action="https://formsubmit.co/creativevortex2@gmail.com" method="POST">
+      <input type="email" name="email" placeholder="La tua email" required>
+      <button type="submit">Iscriviti</button>
+    </form>
+  </div>
+</section>
+
+<!-- 🔥 Sezione finale con bottone -->
+<section class="cta-end">
+  <div class="cta-wrapper">
+    <h2>Scopri di più su Swapzy</h2>
+    <p>Visita le nostre pagine ufficiali e resta connesso.</p>
+    <a href="https://www.instagram.com/il_tuo_account_swapzy" class="cta-btn" target="_blank">Vai su Instagram</a>
   </div>
 </section>
 
 <style>
-  .cta-swapzy {
-    background: linear-gradient(to right, #00ff99, #00c2ff);
-    padding: 80px 20px;
+  /* Sezione newsletter */
+  .newsletter-section {
+    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+    padding: 60px 20px;
     text-align: center;
-    color: black;
     font-family: 'Segoe UI', sans-serif;
   }
 
-  .cta-content h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-    margin-bottom: 20px;
-  }
-
-  .cta-content p {
-    font-size: 1.1rem;
+  .newsletter-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 15px;
     color: #222;
+  }
+
+  .newsletter-section p {
+    font-size: 1rem;
     margin-bottom: 30px;
+    color: #555;
   }
 
-  .cta-btn {
-    display: inline-block;
-    padding: 14px 32px;
-    background-color: black;
-    color: white;
+  .newsletter-section input[type="email"] {
+    padding: 12px 20px;
+    width: 300px;
+    max-width: 90%;
     border-radius: 8px;
-    text-decoration: none;
-    font-weight: 600;
-    transition: background 0.3s ease;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+    font-size: 1rem;
   }
 
-  .cta-btn:hover {
+  .newsletter-section button {
+    padding: 12px 24px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+
+  .newsletter-section button:hover {
     background-color: #333;
   }
 
-  /* Leggera animazione */
-  .cta-content {
-    animation: slideIn 1s ease forwards;
-    opacity: 0;
-    transform: translateY(30px);
+  /* Sezione CTA finale */
+  .cta-end {
+    background: #000;
+    color: #fff;
+    padding: 60px 20px;
+    text-align: center;
   }
 
-  @keyframes slideIn {
-    to {
-      opacity: 1;
-      transform: translateY(0);
-    }
+  .cta-end h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+  }
+
+  .cta-end p {
+    margin-bottom: 20px;
+    color: #ccc;
+  }
+
+  .cta-btn {
+    background: linear-gradient(to right, #00ff99, #00c2ff);
+    color: #000;
+    padding: 12px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+  }
+
+  .cta-btn:hover {
+    opacity: 0.8;
   }
 </style>
