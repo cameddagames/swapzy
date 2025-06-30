@@ -121,41 +121,6 @@
 
   <footer>
     <p>© 2025 Swapzy. Tutti i diritti riservati.</p>
-    <!-- SWAPZY | Email collector con animazione -->
-<section style="background: linear-gradient(to right, #000000, #1a1a1a); color: white; padding: 60px 20px; text-align: center; font-family: 'Montserrat', sans-serif;">
-  <h2 style="font-size: 36px; margin-bottom: 10px;">🚀 Resta aggiornato su Swapzy</h2>
-  <p style="font-size: 18px; color: #ccc;">Iscriviti con la tua email per ricevere accesso anticipato all'app</p>
-
-  <form id="emailForm" style="margin-top: 30px;">
-    <input type="email" id="emailInput" placeholder="La tua email..." required 
-           style="padding: 12px 20px; font-size: 16px; border: none; border-radius: 30px; width: 300px; max-width: 90%;">
-    <button type="submit" 
-            style="padding: 12px 30px; font-size: 16px; border: none; border-radius: 30px; background-color: #ffffff; color: #000000; margin-left: 10px; cursor: pointer; transition: all 0.3s ease;">Invia</button>
-  </form>
-
-  <div id="successMessage" style="margin-top: 20px; font-size: 18px; display: none; animation: fadeIn 1s ease-in-out;">✅ Grazie! Ti terremo aggiornato.</div>
-
-  <style>
-    @keyframes fadeIn {
-      from {opacity: 0;}
-      to {opacity: 1;}
-    }
-
-    form:hover button {
-      background-color: #00ffcc;
-      color: black;
-    }
-  </style>
-
-  <script>
-    document.getElementById('emailForm').addEventListener('submit', function(event) {
-      event.preventDefault();
-      document.getElementById('successMessage').style.display = 'block';
-      document.getElementById('emailInput').value = '';
-    });
-  </script>
-</section>
-
   </footer>
 </body>
 </html>
@@ -171,3 +136,62 @@
     </button>
   </form>
 </section>
+<!-- 🚀 Call to Action Finalissima -->
+<section class="cta-swapzy">
+  <div class="cta-content">
+    <h2 class="pop-text">Pronto a rivoluzionare il tuo modo di vendere e comprare?</h2>
+    <p class="pop-sub">Con Swapzy, ogni scambio conta. Unisciti ora e fai parte del cambiamento.</p>
+    <a href="#newsletter" class="cta-btn">Inizia ora</a>
+  </div>
+</section>
+
+<style>
+  .cta-swapzy {
+    background: linear-gradient(to right, #00ff99, #00c2ff);
+    padding: 80px 20px;
+    text-align: center;
+    color: black;
+    font-family: 'Segoe UI', sans-serif;
+  }
+
+  .cta-content h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  .cta-content p {
+    font-size: 1.1rem;
+    color: #222;
+    margin-bottom: 30px;
+  }
+
+  .cta-btn {
+    display: inline-block;
+    padding: 14px 32px;
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: background 0.3s ease;
+  }
+
+  .cta-btn:hover {
+    background-color: #333;
+  }
+
+  /* Leggera animazione */
+  .cta-content {
+    animation: slideIn 1s ease forwards;
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+</style>
