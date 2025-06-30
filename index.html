@@ -136,11 +136,11 @@
     </button>
   </form>
 </section>
-<!-- 💌 Sezione Newsletter -->
-<section class="newsletter-section" id="newsletter">
+<!-- 📩 Newsletter Section -->
+<section class="newsletter">
   <div class="newsletter-content">
-    <h2>Resta aggiornato con Swapzy</h2>
-    <p>Ricevi aggiornamenti esclusivi e novità future sull’app direttamente nella tua mail.</p>
+    <h2>Rimani aggiornato con Swapzy</h2>
+    <p>Inserisci la tua email per ricevere aggiornamenti esclusivi.</p>
     <form action="https://formsubmit.co/creativevortex2@gmail.com" method="POST">
       <input type="email" name="email" placeholder="La tua email" required>
       <button type="submit">Iscriviti</button>
@@ -148,90 +148,96 @@
   </div>
 </section>
 
-<!-- 🔥 Sezione finale con bottone -->
-<section class="cta-end">
-  <div class="cta-wrapper">
+<!-- 🔗 Call To Action Section -->
+<section class="cta">
+  <div class="cta-box">
     <h2>Scopri di più su Swapzy</h2>
-    <p>Visita le nostre pagine ufficiali e resta connesso.</p>
-    <a href="https://www.instagram.com/il_tuo_account_swapzy" class="cta-btn" target="_blank">Vai su Instagram</a>
+    <p>Seguici su Instagram per rimanere sempre aggiornato.</p>
+    <a href="https://www.instagram.com/il_tuo_account_swapzy" target="_blank" class="cta-button">Visita Instagram</a>
   </div>
 </section>
 
+<!-- 💅 STILI -->
 <style>
-  /* Sezione newsletter */
-  .newsletter-section {
-    background: linear-gradient(145deg, #f0f0f0, #ffffff);
+  .newsletter {
+    background: linear-gradient(to bottom right, #ffffff, #f3f3f3);
     padding: 60px 20px;
     text-align: center;
     font-family: 'Segoe UI', sans-serif;
   }
 
-  .newsletter-section h2 {
-    font-size: 2.2rem;
-    margin-bottom: 15px;
-    color: #222;
+  .newsletter h2 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #111;
   }
 
-  .newsletter-section p {
+  .newsletter p {
     font-size: 1rem;
-    margin-bottom: 30px;
-    color: #555;
+    margin-bottom: 25px;
+    color: #444;
   }
 
-  .newsletter-section input[type="email"] {
+  .newsletter form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .newsletter input[type="email"] {
     padding: 12px 20px;
-    width: 300px;
+    width: 280px;
     max-width: 90%;
     border-radius: 8px;
     border: 1px solid #ccc;
-    margin-right: 10px;
+    margin-bottom: 15px;
     font-size: 1rem;
   }
 
-  .newsletter-section button {
-    padding: 12px 24px;
+  .newsletter button {
+    padding: 12px 25px;
     background-color: #000;
     color: #fff;
+    font-weight: bold;
     border: none;
     border-radius: 8px;
-    font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease;
   }
 
-  .newsletter-section button:hover {
+  .newsletter button:hover {
     background-color: #333;
   }
 
-  /* Sezione CTA finale */
-  .cta-end {
-    background: #000;
+  .cta {
+    background-color: #000;
     color: #fff;
     padding: 60px 20px;
     text-align: center;
   }
 
-  .cta-end h2 {
-    font-size: 2rem;
+  .cta h2 {
+    font-size: 1.8rem;
     margin-bottom: 10px;
   }
 
-  .cta-end p {
-    margin-bottom: 20px;
+  .cta p {
     color: #ccc;
+    margin-bottom: 20px;
   }
 
-  .cta-btn {
+  .cta-button {
+    display: inline-block;
+    padding: 12px 30px;
     background: linear-gradient(to right, #00ff99, #00c2ff);
     color: #000;
-    padding: 12px 30px;
-    text-decoration: none;
     font-weight: bold;
     border-radius: 8px;
+    text-decoration: none;
     transition: all 0.3s ease;
   }
 
-  .cta-btn:hover {
-    opacity: 0.8;
+  .cta-button:hover {
+    opacity: 0.85;
   }
 </style>
