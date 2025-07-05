@@ -209,3 +209,76 @@
     opacity: 0.85;
   }
 </style>
+<!-- MENU E NAVBAR DI SWAPZY -->
+<div class="navbar">
+  <div class="logo">Swapzy</div>
+  <div class="hamburger" onclick="toggleMenu()">☰</div>
+</div>
+
+<div class="menu" id="menu">
+  <a href="#">👤 Profilo</a>
+  <a href="#">⚙️ Impostazioni</a>
+  <a href="#">📤 Esci</a>
+</div>
+
+<style>
+  /* STILE NAVBAR + MENU */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #111;
+    padding: 15px 20px;
+    color: white;
+    font-family: 'Arial', sans-serif;
+    font-size: 18px;
+  }
+
+  .logo {
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+  .hamburger {
+    font-size: 26px;
+    cursor: pointer;
+    user-select: none;
+  }
+
+  .menu {
+    display: none;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    padding: 10px 0;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 160px;
+    border-radius: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.4);
+    z-index: 1000;
+  }
+
+  .menu a {
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 16px;
+    transition: background 0.2s;
+  }
+
+  .menu a:hover {
+    background-color: #333;
+  }
+</style>
+
+<script>
+  function toggleMenu() {
+    const menu = document.getElementById("menu");
+    if (menu.style.display === "flex") {
+      menu.style.display = "none";
+    } else {
+      menu.style.display = "flex";
+    }
+  }
+</script>
