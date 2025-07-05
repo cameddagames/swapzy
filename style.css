@@ -46,3 +46,47 @@ footer {
   font-size: 0.9em;
   color: #555;
 }
+.page-section {
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 20px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+  margin: 30px auto;
+  width: 90%;
+  max-width: 700px;
+  animation: fadeIn 1s ease-in;
+}
+.page-section h2 {
+  font-size: 32px;
+  margin-bottom: 15px;
+  color: #1a1a1a;
+}
+.page-section p, li, ol {
+  font-size: 18px;
+  color: #333;
+}
+.page-section form input, textarea {
+  display: block;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+}
+.page-section button {
+  margin-top: 15px;
+  background-color: #222;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.page-section button:hover {
+  background-color: #444;
+}
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
